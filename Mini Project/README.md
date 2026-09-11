@@ -80,7 +80,7 @@ Saya juga belajar bahwa breakpoint sebaiknya digunakan berdasarkan kebutuhan kon
 ## Repository
 
 URL Repository:  
-`[isi URL repository GitHub di sini]`
+https://github.com/Papimidz/Proyek-3.git
 
 ## Deployment
 
