@@ -80,7 +80,7 @@ Saya juga belajar bahwa breakpoint sebaiknya digunakan berdasarkan kebutuhan kon
 ## Repository
 
 URL Repository:  
-https://github.com/Papimidz/Proyek-3.git
+https://github.com/Papimidz/Mini-Project.git
 
 ## Deployment
 

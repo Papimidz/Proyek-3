@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyek 3 - Modul 1 | Dzia Azizi Hamid</title>
+
+  <style>
+    :root {
+      --color-primary: #2457d6;
+      --color-primary-dark: #193ca0;
+      --color-background: #f8fafc;
+      --color-card: #ffffff;
+      --color-text: #172033;
+      --color-muted: #5f6877;
+      --color-border: #dbe2ea;
+      --spacing: 1rem;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      background-color: var(--color-background);
+    }
+
+    .container {
+      width: min(100% - 2rem, 1120px);
+      margin-inline: auto;
+    }
+
+    header {
+      padding-block: 4rem;
+      text-align: center;
+      background-color: var(--color-card);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    header h1 {
+      margin: 0 0 .5rem;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: .25rem 0;
+      color: var(--color-muted);
+    }
+
+    main {
+      padding-block: 3rem;
+    }
+
+    .intro {
+      margin-bottom: 2rem;
+    }
+
+    .intro h2 {
+      margin-bottom: .5rem;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing);
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      background-color: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+    }
+
+    .project-card p {
+      flex-grow: 1;
+      color: var(--color-muted);
+    }
+
+    .button {
+      display: inline-block;
+      align-self: flex-start;
+      padding: .75rem 1.25rem;
+      color: white;
+      background-color: var(--color-primary);
+      border-radius: .5rem;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: var(--color-primary-dark);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid #f4b000;
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding-block: 2rem;
+      text-align: center;
+      background-color: var(--color-card);
+      border-top: 1px solid var(--color-border);
+    }
+
+    footer p {
+      margin: .25rem 0;
+    }
+
+    @media (min-width: 768px) {
+      .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .project-card {
+        flex: 1 1 20rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Proyek 3 - Modul 1</h1>
+      <p>Dasar Pengembangan Web: HTML & CSS</p>
+      <p><strong>Dzia Azizi Hamid</strong> | 251511010 | 2A-D3</p>
+      <p>D3 Teknik Informatika - Politeknik Negeri Bandung</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2>Daftar Pengerjaan Modul 1</h2>
+      <p>
+        Halaman ini digunakan sebagai navigasi utama untuk membuka seluruh
+        hasil eksperimen, independent challenge, tugas praktikum, dan mini
+        project pada Modul 1.
+      </p>
+    </section>
+
+    <section class="project-list" aria-label="Daftar pengerjaan Modul 1">
+
+      <article class="project-card">
+        <h2>Eksperimen Troubleshooting HTML</h2>
+        <p>
+          Eksperimen diagnosis kesalahan HTML menggunakan DevTools,
+          meliputi path gambar, tautan internal, nesting tag, dan charset.
+        </p>
+
+        <a
+          class="button"
+          href="eksperimen-troubleshooting-html/index.html">
+          Buka Eksperimen
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h2>Artikel Kegiatan Kampus</h2>
+        <p>
+          Independent Challenge C1 berupa artikel kegiatan kampus
+          menggunakan struktur HTML semantik seperti article, section,
+          figure, figcaption, time, dan blockquote.
+        </p>
+
+        <a
+          class="button"
+          href="eksperimen-troubleshooting-html/artikel.html">
+          Buka Artikel
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h2>Pricing Card</h2>
+        <p>
+          Independent Challenge C2 berupa tiga kartu paket lokakarya
+          menggunakan reusable class, CSS custom properties, Flexbox,
+          hover, dan focus-visible.
+        </p>
+
+        <a
+          class="button"
+          href="eksperimen-troubleshooting-html/pricing.html">
+          Buka Pricing Card
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h2>Tugas Praktikum Modul 1</h2>
+        <p>
+          Pengerjaan Semantic Repair, Style the Components, Responsive
+          Feature Layout, Quality Assurance, evidence, dan refleksi teknis.
+        </p>
+
+        <a
+          class="button"
+          href="modul1_251511010_DziaAziziHamid/index.html">
+          Buka Tugas Praktikum
+        </a>
+      </article>
+
+      <article class="project-card">
+        <h2>Mini Project</h2>
+        <p>
+          Landing page Workshop Web Dasar D3 Teknik Informatika yang
+          dibuat menggunakan HTML5, CSS3, Flexbox, responsive layout,
+          CTA, dan aksesibilitas dasar.
+        </p>
+
+        <a
+          class="button"
+          href="Mini%20Project/index.html">
+          Buka Mini Project
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Dzia Azizi Hamid - 251511010</strong></p>
+      <p>D3 Teknik Informatika - Politeknik Negeri Bandung</p>
+      <p>2026 - Proyek 3</p>
+    </div>
+  </footer>
+
+</body>
+</html>
