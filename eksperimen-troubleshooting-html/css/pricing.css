@@ -1,0 +1,83 @@
+:root {
+    --color-primary: #2457d6;
+    --color-primary-dark: #193ca0;
+    --color-text: #172033;
+    --color-background: #f8fafc;
+    --color-card: #ffffff;
+    --color-border: #dbe2ea;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.pricing {
+    padding: 2rem 0;
+}
+
+.container {
+    width: min(100% - 2rem, 1120px);
+    margin-inline: auto;
+}
+
+.pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.price-card {
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.price-card--featured {
+    border-color: var(--color-primary);
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.button {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button:focus-visible {
+    outline: 3px solid #f4b000;
+    outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+    .pricing-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .price-card {
+        flex: 1 1 16rem;
+    }
+}

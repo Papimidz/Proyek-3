@@ -1,0 +1,162 @@
+:root {
+    --color-primary: #2457d6;
+    --color-primary-dark: #193ca0;
+    --color-background: #f8fafc;
+    --color-text: #172033;
+    --color-card: #ffffff;
+    --color-border: #dbe2ea;
+    --spacing: 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.container {
+    width: min(100% - 2rem, 1120px);
+    margin-inline: auto;
+}
+
+header {
+    background-color: var(--color-card);
+    border-bottom: 1px solid var(--color-border);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--spacing);
+    padding-block: var(--spacing);
+}
+
+.brand {
+    flex-basis: 100%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+#hero {
+    padding-block: 4rem;
+}
+
+#hero h1 {
+    max-width: 800px;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#hero p {
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    color: white;
+    background-color: var(--color-primary);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.button:focus-visible {
+    outline: 3px solid #f4b000;
+    outline-offset: 3px;
+}
+
+#manfaat {
+    padding-block: 3rem;
+}
+
+.benefit-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+}
+
+.card {
+    padding: 1.5rem;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+#materi {
+    padding-block: 3rem;
+}
+
+.material-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.material-list span {
+    padding: .5rem .75rem;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: .5rem;
+}
+
+#daftar {
+    margin-block: 3rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+#daftar h2 {
+    margin-top: 0;
+}
+
+footer {
+    padding-block: 2rem;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) {
+    .brand {
+        flex-basis: auto;
+        margin-right: auto;
+    }
+    .benefit-list {
+        display : flex;
+        flex-direction: row;
+        gap: var(--spacing);
+    }
+    .card{
+        flex: 1;
+    }
+}
