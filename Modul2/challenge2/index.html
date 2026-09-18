@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>FAQ Accordion</h1>
+
+    <section class="faq-item">
+      <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false"
+        aria-controls="jawaban-1">
+        Apa itu JavaScript?
+      </button>
+
+      <div id="jawaban-1" class="faq-answer" hidden>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan untuk menambahkan interaksi pada halaman web.</p>
+      </div>
+    </section>
+
+    <section class="faq-item">
+      <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false"
+        aria-controls="jawaban-2">
+        Apa fungsi DOM?
+      </button>
+
+      <div id="jawaban-2" class="faq-answer" hidden>
+        <p>DOM merepresentasikan dokumen sehingga elemen halaman dapat dibaca dan diubah oleh JavaScript.</p>
+      </div>
+    </section>
+
+    <section class="faq-item">
+      <button
+        class="faq-question"
+        type="button"
+        aria-expanded="false"
+        aria-controls="jawaban-3">
+        Apa fungsi event?
+      </button>
+
+      <div id="jawaban-3" class="faq-answer" hidden>
+        <p>Event memberi tahu JavaScript ketika suatu aksi terjadi, misalnya pengguna mengklik tombol.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

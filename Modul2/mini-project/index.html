@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lokakarya Web Dasar</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+
+<button
+  id="kembali-atas"
+  class="kembali-atas"
+  type="button"
+  aria-label="Kembali ke bagian atas halaman">
+  ↑
+</button>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a class="brand" href="#hero">
+        WebDasar
+      </a>
+
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu">
+        Menu
+      </button>
+
+      <nav
+        id="nav-menu"
+        class="nav-menu"
+        aria-label="Navigasi utama">
+
+        <a href="#hero">Beranda</a>
+        <a href="#fitur">Materi</a>
+        <a href="#faq">FAQ</a>
+        <a href="#daftar">Daftar</a>
+
+        <button
+        id="tema-toggle"
+        class="tema-toggle"
+        type="button"
+        aria-pressed="false">
+          Tema Gelap
+        </button>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+
+        <p class="eyebrow">
+          Lokakarya D3 Teknik Informatika
+        </p>
+
+        <h1>
+          Belajar Web dari Dasar, Langsung Praktik
+        </h1>
+
+        <p class="hero-description">
+          Pelajari HTML, CSS, dan JavaScript melalui lokakarya
+          terarah untuk mahasiswa D3 Teknik Informatika.
+        </p>
+
+        <a class="button button-primary" href="#daftar">
+          Daftar Lokakarya
+        </a>
+
+      </div>
+    </section>
+
+
+<section id="fitur" class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Materi</p>
+
+      <h2>Materi yang Akan Dipelajari</h2>
+
+      <p>
+        Mulai dari struktur halaman sampai membuat interaksi
+        menggunakan JavaScript.
+      </p>
+    </div>
+
+    <div class="filter-wrapper">
+  <label for="filter-layanan">
+    Filter materi
+  </label>
+
+  <select id="filter-layanan" name="filter-layanan">
+    <option value="Semua">Semua</option>
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JavaScript">JavaScript</option>
+    <option value="PHP">PHP (belum tersedia)</option>
+  </select>
+</div>
+
+    <p
+      id="status-layanan"
+      class="status-layanan"
+      aria-live="polite">
+    </p>
+
+    <div
+      id="daftar-layanan"
+      class="card-list">
+    </div>
+
+  </div>
+</section>
+
+
+<section id="faq" class="section section-alt">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">FAQ</p>
+
+      <h2>Pertanyaan yang Sering Ditanyakan</h2>
+
+      <p>
+        Beberapa pertanyaan umum mengenai Lokakarya Web Dasar.
+      </p>
+    </div>
+
+    <div class="faq-list">
+
+      <article class="faq-item">
+
+        <h3>
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-jawaban-1">
+            Apakah harus sudah bisa coding?
+          </button>
+        </h3>
+
+        <div
+          id="faq-jawaban-1"
+          class="faq-answer"
+          hidden>
+
+          <p>
+            Tidak. Lokakarya dimulai dari konsep dasar
+            pengembangan web.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="faq-item">
+
+        <h3>
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-jawaban-2">
+            Apa yang perlu disiapkan?
+          </button>
+        </h3>
+
+        <div
+          id="faq-jawaban-2"
+          class="faq-answer"
+          hidden>
+
+          <p>
+            Peserta cukup membawa laptop dan sudah memasang
+            Visual Studio Code serta browser.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="faq-item">
+
+        <h3>
+          <button
+            class="faq-question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-jawaban-3">
+            Apakah ada praktik langsung?
+          </button>
+        </h3>
+
+        <div
+          id="faq-jawaban-3"
+          class="faq-answer"
+          hidden>
+
+          <p>
+            Ya. Setiap materi disertai praktik dan pengujian
+            menggunakan browser serta DevTools.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="daftar" class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Pendaftaran</p>
+
+      <h2>Daftar Lokakarya Web Dasar</h2>
+
+      <p>
+        Isi formulir berikut untuk menyampaikan minat mengikuti
+        lokakarya.
+      </p>
+    </div>
+
+
+    <form id="form-daftar" class="form-daftar" novalidate>
+
+      <div class="form-group">
+
+        <label for="nama">
+          Nama lengkap
+        </label>
+
+        <input
+          id="nama"
+          name="nama"
+          type="text"
+          autocomplete="name"
+          aria-describedby="error-nama">
+
+        <small
+          id="error-nama"
+          class="form-error">
+        </small>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="email">
+          Email
+        </label>
+
+        <input
+          id="email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          aria-describedby="error-email">
+
+        <small
+          id="error-email"
+          class="form-error">
+        </small>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="minat">
+          Materi yang diminati
+        </label>
+
+        <select
+          id="minat"
+          name="minat"
+          aria-describedby="error-minat">
+
+          <option value="">
+            Pilih materi
+          </option>
+
+          <option value="HTML">
+            HTML
+          </option>
+
+          <option value="CSS">
+            CSS
+          </option>
+
+          <option value="JavaScript">
+            JavaScript
+          </option>
+
+        </select>
+
+        <small
+          id="error-minat"
+          class="form-error">
+        </small>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="pesan">
+          Alasan mengikuti lokakarya
+        </label>
+
+        <textarea
+          id="pesan"
+          name="pesan"
+          rows="5"
+          aria-describedby="error-pesan">
+        </textarea>
+
+        <small
+          id="error-pesan"
+          class="form-error">
+        </small>
+
+      </div>
+
+
+      <button
+        class="button button-primary"
+        type="submit">
+        Kirim Pendaftaran
+      </button>
+
+    </form>
+
+
+    <div
+      id="hasil-form"
+      class="hasil-form"
+      aria-live="polite"
+      hidden>
+
+      <h3>Pendaftaran berhasil</h3>
+
+      <p id="ringkasan-form"></p>
+
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <p>
+        &copy; 2026 Lokakarya Web Dasar -
+        D3 Teknik Informatika
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>

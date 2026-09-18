@@ -1,0 +1,11 @@
+{
+  "nama": "Isi Nama Anda",
+  "peran": "Mahasiswa D3 Teknik Informatika",
+  "bio": "Sedang mempelajari pengembangan web menggunakan HTML, CSS, dan JavaScript.",
+  "email": "email@example.com",
+  "keterampilan": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ]
+}

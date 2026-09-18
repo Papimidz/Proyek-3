@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+
+.container {
+  width: min(90%, 680px);
+  margin-inline: auto;
+  padding-block: 48px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+#status {
+  margin-block: 20px;
+  padding: 12px;
+  border-left: 4px solid #6b7280;
+  background: #ffffff;
+}
+
+#status[data-state="loading"] {
+  border-color: #d97706;
+}
+
+#status[data-state="success"] {
+  border-color: #16a34a;
+}
+
+#status[data-state="empty"],
+#status[data-state="error"] {
+  border-color: #dc2626;
+}
+
+#hasil {
+  margin-top: 24px;
+}
+
+.tip-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+}
